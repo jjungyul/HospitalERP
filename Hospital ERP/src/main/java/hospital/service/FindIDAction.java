@@ -38,7 +38,7 @@ public class FindIDAction implements Action {
 				// 아이디를 찾지 못한 경우
 				out.println("<script>");
 				out.println("alert('등록된 정보가 없습니다.');");
-				out.println("history.back();"); // 이전 페이지로 돌아가기
+				out.println("history.go(-1);"); // 이전 페이지로 돌아가기
 				out.println("</script>");
 			}
 
